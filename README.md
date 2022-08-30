@@ -1,1 +1,1 @@
-# https://github.com/YuriuGavrikov/vue-friendGame
+# https://yuriugavrikov.github.io/vue-friendGame/
