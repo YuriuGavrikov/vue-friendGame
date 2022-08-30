@@ -14,7 +14,7 @@ const App = {
 
          if (this.inputValue !== '') {
             let obj = {
-               visible: true,
+               visible: false,
                text: this.inputValue
             }
 
