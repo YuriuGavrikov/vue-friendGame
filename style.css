@@ -68,12 +68,10 @@ h3 {
 }
 
 .btnBox {
-   display       : flex;
-   flex-wrap     : wrap;
-   flex-direction: column;
+   display: flex;
 }
 
-div.btnBox {
+div.btnBox button {
    min-width: 168px;
 }
 
@@ -231,6 +229,8 @@ div.btnBox {
 
 .list-item {
    display        : flex;
+   flex-wrap      : wrap;
+   flex-direction : column;
    align-items    : center;
    justify-content: space-between;
    padding        : 0.5rem;
@@ -241,6 +241,8 @@ div.btnBox {
    border         : 1px solid #ccc;
    border-radius  : 10px;
    margin         : 5px;
+   overflow-x     : hidden;
+   text-align     : center;
 }
 
 .list-item:hover {
