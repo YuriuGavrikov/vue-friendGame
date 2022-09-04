@@ -1,7 +1,6 @@
 const App = {
    data() {
       return {
-         title: 'img.png',
          placeholderString: 'Введите текст',
          userNameValue: '',
          inputValue: '',
