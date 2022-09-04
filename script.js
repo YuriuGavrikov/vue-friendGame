@@ -1,7 +1,7 @@
 const App = {
    data() {
       return {
-         title: 'Game',
+         title: 'img.png',
          placeholderString: 'Введите текст',
          userNameValue: '',
          inputValue: '',
