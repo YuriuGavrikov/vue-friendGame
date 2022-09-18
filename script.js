@@ -20,14 +20,22 @@ const App = {
             this.notes.push(obj)
 
             this.inputValue = ''
+
+            localStorage.setItem('notes', JSON.stringify(this.notes))
          }
+
+         
       },
       removeNote(i, event) {
          this.notes.splice(i, 1)
+         localStorage.setItem('notes', JSON.stringify(this.notes))
       }
    },
-   computed: {
-
+   mounted() {
+      const data = localStorage.getItem('notes')
+      if (data) {
+         this.notes = JSON.parse(data)
+      }
    },
    watch: {
 
