@@ -4,6 +4,10 @@
    box-sizing: border-box;
 }
 
+[v-cloak] {
+   display: none;
+}
+
 body {
    font-family            : Inter, Roboto, Oxygen, Fira Sans, Helvetica Neue, sans-serif;
    -webkit-font-smoothing : antialiased;
@@ -86,33 +90,9 @@ div.btnBox button {
    opacity: 0.8;
 }
 
-.btn:disabled {
-   cursor      : not-allowed;
-   opacity     : 1 !important;
-   background  : #eee !important;
-   border-color: #ddd !important;
-   color       : #999 !important;
-}
-
-.btn:active {
-   box-shadow: inset 1px 1px 1px rgba(0, 0, 0, 0.3);
-}
-
-.btn.primary {
-   background: #42b983;
-   color     : #fff;
-}
-
 .btn.danger {
-   background  : #e53935;
-   color       : #fff;
    border-color: #e53935;
-}
-
-.btn.warning {
-   background  : #c25205;
-   color       : #fff;
-   border-color: #c25205;
+   color       : #e53935;
 }
 
 .myImg {
