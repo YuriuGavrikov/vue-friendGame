@@ -18,10 +18,10 @@ const addNewNote = () => {
 
 		inputValue.value = "";
 
-		localStorage.setItem("notes", JSON.stringify(notes));
+		localStorage.setItem("notes", JSON.stringify(notes.value));
 	}
 };
-const removeNote = (i, event) => {
+const removeNote = (i) => {
 	notes.value.splice(i, 1);
 	localStorage.setItem("notes", JSON.stringify(notes.value));
 };
